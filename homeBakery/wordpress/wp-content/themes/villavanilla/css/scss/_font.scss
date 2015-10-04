@@ -1,0 +1,37 @@
+/*
+font-family: 'Tangerine', cursive;
+font-family: 'Pinyon Script', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Niconne', cursive;
+font-family: 'Alex Brush', cursive;
+font-family: 'Rochester', cursive;
+font-family: 'Allura', cursive;
+font-family: 'Parisienne', cursive;
+font-family: 'Stalemate', cursive;
+font-family: 'Ruthie', cursive;
+font-family: 'Lovers Quarrel', cursive;
+
+
+
+font-family: 'Hind', sans-serif;
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Tangerine|Pinyon+Script|Great+Vibes|Niconne|Alex+Brush|Rochester|Allura|Parisienne|Stalemate|Ruthie|Lovers+Quarrel);
+@import url(https://fonts.googleapis.com/css?family=Hind);
+.title-font{
+	font-family: 'Great Vibes', cursive;
+}
+.post-title-font{
+	font-family: 'Great Vibes', cursive;
+	font-size: 20px;
+}
+
+.menu-font{
+	font-family: 'Great Vibes', cursive;
+	font-size: 2em;
+}
+
+.normal-text{
+	font-family: 'Hind', sans-serif;
+	font-size: 17px;
+}
