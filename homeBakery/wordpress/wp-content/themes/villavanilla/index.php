@@ -16,22 +16,22 @@
 	<link href='https://fonts.googleapis.com/css?family=Tangerine|Pinyon+Script|Great+Vibes|Niconne|Alex+Brush|Rochester|Allura|Parisienne|Stalemate|Ruthie|Lovers+Quarrel' rel='stylesheet' type='text/css'>
 </head>
 <body <?php body_class(); ?>>
-	<div class="conatiner-fluid color">
+	<div class="conatiner-fluid" id="transparent">
 		<div class="row background_image">
 			<!--Container for logo -->
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs blur">
-				<div class="row">
-					<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-12 logo_section">
+				<div class="row transparent">
+					<div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-8 col-sm-offset-2 col-xs-12 logo_section transparent">
 						<img src="wp-content/themes/villavanilla/img/logo_white.png">
 					</div>
 				</div>
-				<div class="row intro">
+				<div class="row intro transparent">
 					<!-- Container for Menu section-->
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 						
-							<div class="menu">
+							<div class="menu row transparent">
 								
-								<ul class="menu-font hidden-sm hidden-xs">
+								<ul class="menu-font hidden-sm hidden-xs transparent">
 									<li><img src="wp-content/themes/villavanilla/img/menu_frame.png" class="menu_frame menu_frame_transform"></li>
 									<li><a href="#about">About</a></li>
 									<li><a href="#gallery">Gallery</a></li>
@@ -39,7 +39,7 @@
 									<li><img src="wp-content/themes/villavanilla/img/menu_frame.png" class="menu_frame"></li>
 								</ul>
 
-								<ul class="menu-font-mobile hidden-lg hidden-md">
+								<ul class="menu-font-mobile hidden-lg hidden-md col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 transparent">
 									<li><a href="#about">About</a></li>
 									<li><a href="#gallery">Gallery</a></li>
 									<li><a href="#contacts">Contacts</a></li>
@@ -50,8 +50,8 @@
 					</div>
 
 					<!-- Container for About sectiob-->
-					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-						<div class="row about" id="about">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 transparent">
+						<div class="row about transparent" id="about">
 							<div class="col-lg-8 col-md-6 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 								<h2 class="title-font">About</h2>
 								<p class="normal-text">
@@ -69,7 +69,7 @@
 	<!-- Gallery section-->
 	<div class="conatiner-fluid gallery_container " id="gallery">
 		<div class="row">
-			<div class="col-lg-12 col-md-6 col-sm-12 col-xs-12">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 				<!-- Section image-->
 				<img src="wp-content/themes/villavanilla/img/section_start_img.png" class="section_img">
 				<!--Section title -->
@@ -78,13 +78,13 @@
 					
 
 				
-				<div class="row flexbox">
+				<div class="row">
 						<!-- Start the Loop. -->
 							 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-							 	<div class="col-lg-5 col-md-5 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
+							 	<div class="col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-10 col-xs-offset-1">
 									 	<!-- Display the Title -->
-
-									 	<div class="post_image">
+									 	<div class="post">
+									 		<div class="post_image">
 									 		<?php 
 											if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it
 													the_post_thumbnail();
@@ -98,6 +98,7 @@
 									 	<h3 class="product_title post-title-font"><?php the_title(); ?></h3>
 									 	<div class="ingredients normal-text">
 									 		<?php the_content(); ?>
+									 	</div>
 									 	</div>
 							 	</div>
 
@@ -182,7 +183,7 @@
 		</div>
 
 	</div>
-	<div class="container-fluid hidden-lg hidden-md hidden-sm hidden-xs">
+	<div class="container-fluid">
 		<div class="row">
 			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 
@@ -192,8 +193,8 @@
 				<h2 class="section_title text-center title-font">Location</h2>
 
 				<div class="row">
-					<div class="col-lg-12">
-						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.914302889256!2d24.95169469999999!3d60.198701099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692099c9c9e3a2d%3A0x86893d99cf0a7632!2sKarstulav%C3%A4gen+8%2C+00550+Helsingfors!5e0!3m2!1sen!2sfi!4v1443955791516" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1982.914302889256!2d24.95169469999999!3d60.198701099999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4692099c9c9e3a2d%3A0x86893d99cf0a7632!2sKarstulav%C3%A4gen+8%2C+00550+Helsingfors!5e0!3m2!1sen!2sfi!4v1443955791516" width="94%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
 					</div>
 				</div>
 

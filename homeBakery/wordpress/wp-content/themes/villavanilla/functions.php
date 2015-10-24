@@ -63,7 +63,7 @@ function villavanilla_setup() {
      * Enable support for post thumbnails and featured images.
      */
     add_theme_support( 'post-thumbnails' );
-    set_post_thumbnail_size( 600, 280, true );
+    //set_post_thumbnail_size( 580, 280, true );
  
    
  
